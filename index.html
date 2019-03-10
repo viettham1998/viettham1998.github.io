@@ -143,6 +143,59 @@
         <p>* Trên 100 votes, chỉ số hài đạt mức 75%. Member được thêm 10 point.</p>
         <p>* Trên 200 votes, chỉ số hài đạt mức 75%. Member được thêm 10 point.</p>
       
+      
+      <h3>Downloading</h3>
+      <h5>Tôi sử dụng những tập tin đã tải về như thế nào?</h5>
+       <p>Bạn hãy đọc kỹ hướng dẫn này. </p>
+      <h5>Tôi đã tải phim về, nhưng không biết các khái niệm CAM/TS/TC/SCR nghĩa là gì?</h5>
+        <p>Đọc kỹ hướng dẫn này. </p>
+      <h5>Tại sao torrent vừa mới hoạt động thì lại biến mất đột ngột??!</h5>
+        <p>Có vài lí do sau đây: </p>
+        <p>1) Torrent không phù hợp với rules.</p>
+        <p>2) Uploader đã xóa nó vì bản up lên là bản scene (chất lượng không tốt). Có khả năng bản này sẽ được thay thế bằng bản internal (chất lượng tốt). </p>
+      <h5>Làm thế nào tôi có thể tiếp tục tải về các torrent đã tạm ngưng hoặc reseed các torrent đã có?</h5>
+        <p>Mở tập tin torrent lên. Khi chương trình torrent hỏi đường dẫn truy xuất, chọn đường dẫn đến nơi mà bạn chứa các tập tin đã tồn tại, sau đó chương trình sẽ tự động recheck và tiếp tục tải về hoặc reseed. </p>
+      <h5>Tại sao dữ liệu tôi download đôi khi dừng lại tại 99%?</h5>
+        <p>Bạn đã download được phần lớn dữ liệu và torrent-client đang cố tìm những users có phần dữ liệu cuối cùng mà bạn thiếu hoặc bị lỗi. Việc download sẽ tạm dừng khi chỉ còn vài phần trăm là hoàn thành. Vui lòng chờ một chút và bạn sẽ download được 100% dữ liệu mình muốn. Vấn đề này thường gặp do bạn sử dụng sai torrent-client, hãy dùng uTorrent hoặc Azureus để cho kết quả tốt nhất. </p>
+      <h5>Thông điệp "a piece has failed an hash check" nghĩa là gì?</h5>
+        <p>Torrent-client đang kiểm tra dữ liệu download bị lỗi. Nếu một phần nào đó của dữ liệu bạn download về bị lỗi thì torrent-client sẽ tự động download lại phần đó cho đến khi hết lỗi thì thôi. Việc xảy ra lỗi dạng này cũng rất bình thường cho nên bạn đừng quá bận tâm về nó. Một số torrent-client có tùy chọn cho phép bạn block những user thường hay gửi những phần dữ liệu bị lỗi. </p>
+      <h5>Kích thước của torrent là 100MB. Vậy sao dữ liệu tôi đã download tới 120MB?</h5>
+        <p>Hãy để ý đến câu hỏi bên trên. Nếu torrent-client nhận được những phần dữ liệu bị lỗi thì nó sẽ tự đông download lại cho đến khi hết lỗi. Bởi vậy tổng dung lượng bạn đã download sẽ có khả năng lớn hơn dung lượng gốc của dữ liệu. </p>
+      <h5>Tại sao tôi bị lỗi "rejected by tracker - Port xxxx is blacklisted"?</h5>
+        <p>Torrent-client của bạn phải sử dụng port thuộc phạm vị mặc định cho giao thức BitTorrent (6881-6889) hoặc những port dùng mặc định cho các chương trình P2P. Tracker không cho phép bạn sử dụng những port chuẩn của các giao thức trao đổi dữ liệu khác. Lí do là vì nhiều nhà cung cấp dịch vụ thường đóng các port này lại khiến cho tốc độ trao đổi dữ liệu trên tracker giảm xuống rất nhiều. Những port có thể bị block được liệt kê trong danh sách bên dưới, tuy nhiên chúng tôi cũng không đảm bảo nhà cung cấp dịch vụ của bạn chỉ block những port này (họ có thể block thêm nhiều port khác): 411-413 (Direct Connect), 1214 (Kazaa), 4662 (eDonkey), 6346-6347 (Gnutella), 6881-6889 (BitTorrent). Để truy cập vào tracker thì bạn cần chỉnh torrent-client của bạn sử dụng những port khác những port trên (tốt hơn hết là trong khoảng 49152-65535). Lưu ý một số client như Azureus sử dụng một port cho tất cả các torrent trong khi một số client lại sử dụng những port khác nhau cho những torrent khác nhau. Những port này đóng vai trò quan trọng trong việc kết nối giữa các user chứ không phải giữa client và server! Thay đổi port trong nhiều trường hợp sẽ làm tăng tốc độ giữa các user với nhau. Bạn cũng đừng hỏi người khác rằng mình sẽ sử dụng port nào nhé, cứ lấy port càng cao thì càng ít bị nhà cung cấp dịch vụ phát hiện (họ sẽ không đóng port của bạn). </p>
+      <h5>"IOError - [Errno13] Permission denied" là gì?</h5>
+        <p>Để giải quyết vấn đề này thì bạn cần refresh lại máy tính. Chi tiết lỗi như sau: IOError là một lỗi vào-ra dữ liệu và lỗi này là do máy tính của bạn, không phải do tracker. Lỗi này xảy ra khi torrent-client không thể mở files đã download vì một lí do nào đó. Lí do thường gặp nhất là khi có 2 torrent-client làm việc cùng lúc. Ví dụ bạn đang cố tắt torrent-client A nhưng không tắt được. Đợi lâu quá nên bạn mở luôn cũng torrent-client đó lần thứ hai và bạn sẽ bị lỗi như trên. Nói cách khác là lần chạy torrent-client đầu tiên đã block những files đang còn chạy dang dở. Ít gặp hơn là những trường hợp lỗi trong bảng hệ thống file (FAT hoặc FAT32). Những file đã download sẽ bị lỗi khi đọc hoặc chúng hỏng hết chẳng đọc được gì cả. Bạn nên dùng hệ thống file NTFS để có kết quả tốt nhất. </p>
+      <h5>Tại sao tôi bị báo lỗi "Your slot limit is reached! You may at most download xx torrents at the same time" ?</h5>
+        <p>Lỗi này là do "Hệ thống Slot". Nó được sử dụng để giới hạn số download cùng lúc của các thành viên có ratio thấp và download hơn 10 GB</p>
+        <p>Nguyên tắc: 
+        <p>Ratio dưới	0.5	 	đươc down 1 lúc	1</p>
+        <p>Ratio dưới	0.65	 	đươc down 1 lúc	2</p>
+        <p>Ratio dưới	0.8	 	đươc down 1 lúc	3</p>
+        <p>Ratio dưới	0.95	 	đươc down 1 lúc	4</p>
+        <p>Ratio trên	0.95	 	đươc down 1 lúc	không giới hạn</p>
+      <h5>Passkey là gì? Nó hoạt động như thế nào?</h5>
+        <p>Passkey là một dạng mã đặc biệt dùng để phân biệt các thành viên trong tracker. Mỗi thành viên sẽ có 1 passkey riêng, và dựa vào đó hệ thống có thể nhận biết thành viên đó đang thao tác gì trên tracker (seed/leech). </p>
+      <h5>Tại sao tôi lại nhận được thông báo "Unknown Passkey"?</h5>
+        <p>Lý do thứ nhất có thể do bạn chưa phải là thành viên trên tracker hoặc tập tin torrent mà bạn tải về không phải là tải từ tracker. Trong trường hợp này bạn cần phải đăng nhập lại và tải lại tập tin torrent. Trường hợp thứ hai có thể do bạn đã thay đổi passkey trên tracker, nhưng bạn chưa thay đổi passkey trong tập tin torrent bạn đang tải. Bạn cần thay đổi passkey ở cả 2 phía; tracker và tập tin torrent. Nếu bạn đã thay đổi passkey rồi mà vẫn bị báo lổi, thì hãy làm thao tác update tracker. </p>
+      <h5>Khi nào thì tôi nên thay đổi passkey?</h5>
+        <p>Trong trường hợp passkey của bạn bị tiết lộ và các thành viên khác lạm dụng để tải torrents với tài khoản của bạn. Trong trường hợp này, bạn sẽ thấy những torrent mà bạn không tham gia seed/leech xuất hiện trong profile của bạn. </p>
+      <h5>DHT là gì? Tại sao tôi phải tắt nó và làm như thế nào?</h5>
+        <p>DHT phải được tắt trong torrent client. Nó khiến cho những thông tin của bạn bị chuyển đi sai lệch và có thể bị xem như gian lận. Bất cứ thành viên nào bật DHT lên sẽ bị hệ thống ghi nhận như là hành vi gian lận và có thể bị khóa tài khoản. </p>
+      <h5>Tại sao chương trình client của tôi thông báo hết dung lượng ổ cứng, trong khi thực tế vẫn còn?</h5>
+        <p>Nhiều khả năng ổ đĩa của bạn được format theo định dạng FAT32, đồng nghĩa với việc giới hạn dung lượng file không được quá 4 GB. Nếu bạn đang xài Windows, hãy chuyển đổi định dạng thành NTFS. Nhấp vào đây để biết thêm chi tiết. </p>
+      <h5>Tại sao có một số torrent tôi không được quyền download?</h5>
+        <p>Có một số torrent đặc biệt được set quyền download. Chỉ những user nào đạt điều kiện yêu cầu về cấp độ thì mới có thể download được. Chi tiết như sau:</p>
+        <p>* Torrent Blu-ray Remux của BDViet: Yêu cầu cấp độ Insane User trở lên mới download được.</p>
+        <p>* Torrent có thuyết minh tiếng việt: Yêu cầu cấp độ Elite User trở lên mới download được. </p>
+      <h5>Các hình ảnh 50%, 30%, Free, x2 ở cuối mỗi torrent có ý nghĩa gì?</h5>
+        <p>Đấy là trạng thái của torrent, cụ thể:</p>
+        <p>- Torrent có 50%	 	Download tính 50%, upload tính 100%.</p>
+        <p>- Torrent có 30%	 	Download tính 30%, upload tính 100%.</p>
+        <p>- Torrent có Free	 	Download tính 0%, upload tính 100%.</p>
+        <p>- Torrent có 2X	 	Download tính 100%, upload nhân 2.</p>
+        <p>- Torrent có 2X Free	 	Download tính 0%, upload nhân 2.</p>
+        <p>- Torrent có 2X 50%	 	Download tính 50%, upload nhân 2.</p>
+        <p>Việc xét trạng thái torrent là do các staff xét duyệt dựa trên quy định của tracker.</p> 
       <h3>Làm thế nào để tăng tốc độ download của torrent?</h3>
       <h5>Đừng cố download những torrent mới ngay khi chúng vừa được upload, đặc biệt trong trường hợp bạn có tốc độ thấp.</h5>
         <p>Hãy để những user có tốc độ cao download dữ liệu trước, những người này sẽ đảm bảo cho bạn tốc độ download cực nhanh và không bị hạn chế băng thông. Thời điểm thích hợp nhất để nhảy vào download torrent là khi torrent đó đã được những người khác download gần phân nửa (1/2). Tốc độ seeding của bạn cũng sẽ bị ảnh hưởng do đã có nhiều người download hết torrent. Nhiệm vụ của bạn là phải làm sao cân bằng giữa 2 yếu tố seed/leech :)</p> 
