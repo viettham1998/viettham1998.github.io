@@ -58,6 +58,7 @@
 			border: none;
 			border-radius: 4px;
 			cursor: pointer;
+			font-size: 20px;
 		}
 
 		input[type=submit]:hover {
@@ -66,43 +67,86 @@
 
 		div {
 			border-radius: 5px;
-			padding: 20px;
+			
 		}
 
-		.zero{
+		.heading{
 			display: block;
 			text-align: center;
 			background: black;
 			color: white;
 			font-size: 32px;
 			height: 36px;
-			line-height: 36px; 
+			line-height: 36px;
+			margin-top: 16px; 
+		}
+		.end{
+			display: block;
+			text-align: center;
+			font-size: 20px;
+
+		}
+		.required{
+			
+			color: orange;
+			
+		}
+		.new{
+			display: flex;
+			justify-content: space-between;
+		}
+		.hojoco{
+			border-bottom: 3px solid orange;
+			display: inline-block;
+		}
+		.img{
+			height: 100px;
+			width: 100px;
 		}
 
 	</style>
 </head>
 <body>
 	<div>
-
-			<label for="name" class="zero">GENERAL INQUIRIES</label>
+		<div class="new">
+			<img src="./img/src.jpg" class="img"></img>
+			<div>
+				<div class="hojoco">HOME</div>
+				<div class="hojoco">JOBS</div>
+				<div class="hojoco">CONTACT</div>
+			</div>
+		</div>
+		<label for="name" class="heading">GENERAL INQUIRIES</label>
+		<div class="new">
 			<label for="name">NAME</label>
-			<input type="text" id="name" name="name">
-
+			<lable for="required" class="required">required</lable>
+		</div>
+		<input type="text" id="name" name="name">
+		<div class="new">
 			<label for="email">EMAIL</label>
-			<input type="text" id="email" name="email">
-
+			<lable for="required" class="required">required</lable>
+		</div>
+		<input type="text" id="email" name="email">
+		<div class="new">
 			<label for="enquiry">NATURE OF ENQUIRY</label>
-			<select id="enquiry" name="enquiry">
-				<option value="general">General</option>
-				<option value="abc">abc</option>
-				<option value="xyz">xyz</option>
-			</select>
+			<lable for="required" class="required">required</lable>
+		</div>
+		<select id="enquiry" name="enquiry">
+			<option value="general">General</option>
+			<option value="abc">abc</option>
+			<option value="xyz">xyz</option>
+		</select>
+		<div>
 			<label for="message">MESSAGE</label>
-			<input type="longtext" id = "message" name="message">
+		</div>
+		<input type="longtext" id = "message" name="message">
+		<div class="new">
 			<label for="tong">3 + 4 = ?</label>
-			<input type="text" id="tong" name="tong">
-			<input type="SUBMIT" value="SUBMIT">
-			<lable for="1612609 - Huynh Viet Tham">	1612609 - HUYNH VIET THAM </lable>
+			<lable for="required" class="required">required</lable>
+		</div>
+		<input type="text" id="tong" name="tong">
+		<input type="SUBMIT" value="SUBMIT">
+		<lable for="1612609" class="end">	PHAT TRIEN UNG DUNG WEB - 1612609 - HUYNH VIET THAM </lable>
 		
 	</div>
 </body>
