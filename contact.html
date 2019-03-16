@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			background-color: white;
+		}
+
+		h1 {
+			color: blue;
+			text-align: center;
+		}
+
+		p {
+			font-family: verdana;
+			font-size: 20px;
+		}
+		input[type=title] {
+			width: 100%;
+			background-color: #000000;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type=title]:hover {
+			background-color: #000000;
+		}
+		input[type=text], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=longtext]{
+			width: 100%;
+			padding: 40px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			width: 100%;
+			background-color: #000000;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		div {
+			border-radius: 5px;
+			
+			padding: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+
+			<input type="title" value="GENERAL INQUIRIES">
+			<label for="name">NAME</label>
+			<input type="text" id="name" name="name">
+
+			<label for="email">EMAIL</label>
+			<input type="text" id="email" name="email">
+
+			<label for="enquiry">NATURE OF ENQUIRY</label>
+			<select id="enquiry" name="enquiry">
+				<option value="general">General</option>
+				<option value="abc">abc</option>
+				<option value="xyz">xyz</option>
+			</select>
+			<label for="message">MESSAGE</label>
+			<input type="longtext" id = "message" name="message">
+			<label for="tong">3 + 4 = ?</label>
+			<input type="text" id="tong" name="tong">
+			<input type="SUBMIT" value="SUBMIT">
+			<lable for="1612609 - Huynh Viet Tham">	1612609 - HUYNH VIET THAM </lable>
+		
+	</div>
+</body>
+</html>
