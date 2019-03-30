@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1612609</title>
+	<style>
+		.anh{
+			display: flex;
+			justify-content: center;
+		}
+		.loadimg{
+			width: 400px;
+			height: 200px;
+			margin-top: 20px;
+			border: 2px  dashed;
+		}
+		.sp{
+			display: flex;
+			justify-content: center;
+			cursor: pointer;
+		}
+		.btnsp{
+			width: 100px;
+			height: 100px;
+			margin-top: 30px;
+		}
+		.load6img{
+			width: 150px;
+			height: 75px;
+			margin-top: 20px;
+			margin-left: 10px;
+			margin-right: 10px;
+			border: 2px  dashed;
+			cursor: pointer;
+		}
+		.end{
+			display: block;
+			text-align: center;
+			margin-top: 75px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="anh">
+		<img id="trungTam" src="./imgjs/001.jpg" class="loadimg"></img>
+	</div>
+	<div class="sp">
+		<img id="start" src="./imgjs/start.png" class="btnsp" onclick="myfunction()"></img>
+	</div>
+	<script type="text/javascript">
+		var image = document.getElementById("start");
+		var check = 0;
+		var ID=0;
+		var interval;
+		var image01 = document.getElementById("trungTam");
+		var smallimg = document.getElementsByClassName("load6img");
+
+		function myfunction() {
+			if(check == 0)
+			{
+				image.src="./imgjs/pause.png";
+				check = 1;
+
+				interval = setInterval(chuyenanh, 1000);
+			}
+			else if(check == 1)
+			{
+				image.src="./imgjs/start.png";
+				clearInterval(interval);
+				check = 0;
+			}
+		}
+
+		function chuyenanh() {
+			if (smallimg.length - 1 > ID) {
+				image01.src = smallimg[++ID].src;
+			}
+			else {
+				ID = -1;
+				image01.src = smallimg[++ID].src;
+			}
+		}
+
+		function showimg(id, src){
+			image01.src=src;
+			ID=id;
+		}
+	</script>
+	<div class="anh">
+		<img id="0" src="./imgjs/001.jpg" class="load6img" onclick="showimg(this.id, this.src)"></img>
+		<img id="1" src="./imgjs/002.jpg" class="load6img" onclick="showimg(this.id, this.src)"></img>
+		<img id="2" src="./imgjs/003.jpg" class="load6img" onclick="showimg(this.id, this.src)"></img>
+		<img id="3" src="./imgjs/004.jpg" class="load6img" onclick="showimg(this.id, this.src)"></img>
+		<img id="4" src="./imgjs/005.png" class="load6img" onclick="showimg(this.id, this.src)"></img>
+		<img id="5" src="./imgjs/006.jpg" class="load6img" onclick="showimg(this.id, this.src)"></img>
+	</div>
+<lable for="1612609" class="end">	PHAT TRIEN UNG DUNG WEB - 1612609</lable>
+</body>
+</html>
