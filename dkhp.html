@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1612609</title>
+	<style>
+		.a p{
+			font-weight: bold;
+			font-size: 20px;
+			margin: 0px;
+		}
+		.container {
+			width: 100%;
+			max-width: 720px;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		hr {
+			margin: 0px;
+			margin-bottom: 20px;
+		}
+		.form-group {
+			margin-bottom: 1rem;
+		}
+		input[type=text]{
+			
+			padding: 5px 30px;
+			display: inline-block;
+			border: 1px solid;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+		.fn{
+			font-weight: bold;
+			
+			display: inline-block;
+			width: 100px;
+			text-align: right;
+		}
+		.ra{
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<p>Đăng kí môn học</p><hr>
+	</div>
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label class="fn" for="ms">Mã số:</label><span></span>
+				<input type="text" id="ms" name="Mã số">
+			</div>
+			<div class="form-group">
+				<label class="fn" for="ht">Họ tên:</label>
+				<input type="text" id="ht" name="Họ tên">
+			</div>
+			<div class="form-group">
+				<label class="fn" for="ht">Giới tính:</label>
+				<label>Nam
+					<input class="ra" type="radio" checked="checked" name="radio">
+					<span class="checkmark"></span>
+				</label>
+				<label>Nữ
+					<input class="ra" type="radio" name="radio">
+					<span class="checkmark"></span>
+				</label>
+			</div>
+			<div class="form-group">
+				<label class="fn" for="ht">Ngày sinh:</label>
+				<select>
+					<script type="text/javascript">
+						for (var i = 1; i < 32; i++) {
+							var html = '<option value="' + i + '">' + i + '</option>';
+							document.writeln(html);
+						}
+					</script>
+				</select>
+				<select>
+					<script type="text/javascript">
+						for (var i = 1; i < 13; i++) {
+							var html = '<option value="' + i + '">' + i + '</option>';
+							document.writeln(html);
+						}
+					</script>
+				</select>
+				<select>
+					<script type="text/javascript">
+						for (var i = 1980; i < 2011; i++) {
+							var html = '<option value="' + i + '">' + i + '</option>';
+							document.writeln(html);
+						}
+					</script>
+				</select>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
+
+
+
