@@ -16,6 +16,7 @@
 			padding-left: 15px;
 			margin-right: auto;
 			margin-left: auto;
+			cursor: pointer;
 		}
 		hr {
 			margin: 0px;
@@ -34,7 +35,7 @@
 		}
 		.fn{
 			font-weight: bold;
-			
+			cursor: pointer;
 			display: inline-block;
 			width: 100px;
 			text-align: right;
@@ -43,6 +44,62 @@
 			padding-left: 0px;
 			padding-right: 0px;
 		}
+		.fn1{
+			font-weight: bold;
+			cursor: pointer;
+			width: 100px;	
+			padding-right: 200px;
+			padding-left: 10px;
+		}
+		.ntn{
+			padding-right: 5px;
+		}
+		#customers {
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		#customers td, #customers th {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+
+		#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+		#customers tr:hover {background-color: #ddd;}
+
+		#customers th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.th-right {
+			text-align: right;
+			padding-right: 20px;
+		}
+
+		.select {
+			width:100%;
+			height: 100%;
+		}
+
+		th {
+			padding-top:10px;
+			padding-bottom: 10px;
+		}
+
+		button {
+			display: block;
+			width:100%;
+		}
+
+		table{
+			margin:auto;
+		}
 	</style>
 </head>
 <body>
@@ -50,56 +107,286 @@
 		<p>Đăng kí môn học</p><hr>
 	</div>
 	<div class="container">
-		<form>
-			<div class="form-group">
-				<label class="fn" for="ms">Mã số:</label><span></span>
-				<input type="text" id="ms" name="Mã số">
-			</div>
-			<div class="form-group">
-				<label class="fn" for="ht">Họ tên:</label>
-				<input type="text" id="ht" name="Họ tên">
-			</div>
-			<div class="form-group">
-				<label class="fn" for="ht">Giới tính:</label>
-				<label>Nam
-					<input class="ra" type="radio" checked="checked" name="radio">
-					<span class="checkmark"></span>
-				</label>
-				<label>Nữ
-					<input class="ra" type="radio" name="radio">
-					<span class="checkmark"></span>
-				</label>
-			</div>
-			<div class="form-group">
-				<label class="fn" for="ht">Ngày sinh:</label>
-				<select>
-					<script type="text/javascript">
-						for (var i = 1; i < 32; i++) {
-							var html = '<option value="' + i + '">' + i + '</option>';
-							document.writeln(html);
-						}
-					</script>
-				</select>
-				<select>
-					<script type="text/javascript">
-						for (var i = 1; i < 13; i++) {
-							var html = '<option value="' + i + '">' + i + '</option>';
-							document.writeln(html);
-						}
-					</script>
-				</select>
-				<select>
-					<script type="text/javascript">
-						for (var i = 1980; i < 2011; i++) {
-							var html = '<option value="' + i + '">' + i + '</option>';
-							document.writeln(html);
-						}
-					</script>
-				</select>
-			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
+		
+		<table style="margin-bottom: 12px">
+			<tr>
+				<th class="th-right">
+					<label class="fn" for="ms">Mã số:</label>
+				</th>
+				<th>
+					<input type="text" id="ms" name="Mã số">
+				</th>
+			</tr>
+			<tr>
+				<th class="th-right">
+					<label class="fn" for="ht">Họ tên:</label></th>
+					<th><input type="text" id="ht" name="Họ tên">
+					</th>
+				</tr>
+				<tr>
+					<th class="th-right">
+						<label class="fn">Giới tính:</label>
+					</th>
+					<th>
+						<label>Nam
+							<input class="ra" type="radio" checked="checked" name="radio" id="ranam">
+							<span class="checkmark"></span>
+						</label>
+						<label>Nữ
+							<input class="ra" type="radio" name="radio" id="ranu">
+							<span class="checkmark"></span>
+						</label>
+					</th>
+
+				</tr>
+				<tr>
+					<th  class="th-right">
+						<label class="fn">Ngày sinh:</label>
+					</th>
+					<th>
+						<select class="ntn" id="ngay">
+							<script type="text/javascript">
+								for (var i = 1; i < 32; i++) {
+									var html = '<option value="' + i + '">' + i + '</option>';
+									document.writeln(html);
+								}
+							</script>
+						</select>
+						<select class="ntn" id="thang">
+							<script type="text/javascript">
+								for (var i = 1; i < 13; i++) {
+									var html = '<option value="' + i + '">' + i + '</option>';
+									document.writeln(html);
+								}
+							</script>
+						</select>
+						<select class="ntn" id="nam">
+							<script type="text/javascript">
+								for (var i = 1980; i < 2011; i++) {
+									var html = '<option value="' + i + '">' + i + '</option>';
+									document.writeln(html);
+								}
+							</script>
+						</select>
+					</th>
+				</div>
+			</tr>			
+		</table>
+		<table>
+			<tr>
+				<th>
+					<label class="fn1">Các môn học:</label>
+				</th>
+				<th>
+				</th>
+				<th>
+					<label class="fn1">Đã chọn:</label>
+				</th>					
+			</tr>
+			<tr>
+				<th>
+					<select class="select" id="CacMonHoc" size="5">
+						<option>Chuyên đề Java</option>
+						<option>CSDL Web</option>
+						<option>Trí tuệ nhân tạo</option>
+						<option>Công nghệ phần mềm</option>
+						<option>Lập trình Windows</option>
+						<option>Cấu trúc dữ liệu</option>
+						<option>Lập trình hướng đối tượng</option>
+					</select>
+				</th>
+				<th>
+					<div style="min-width: 80px">
+						<button id="chonMon" onclick="chonMon_click()">></button>
+						<button id="chonTatCaMon" onclick="chonTatCaMon_click()">>></button>
+						<button id="xoaMon" onclick="xoaMon_click()"><</button>
+						<button id="xoaTatCaMon" onclick="xoaTatCaMon_click()"><<</button>							
+					</div>
+				</th>
+				<th>
+					<select class="select" id="MonHocDaChon" size="5">
+
+					</select>
+				</th>		
+			</tr>
+		</table>
+
+		<div>
+			<table id="customers">
+				<tr>
+					<th>Mã số</th>
+					<th>Họ tên</th>
+					<th>Giới tính</th>
+					<th>Ngày sinh</th>
+				</tr>
+			</table>
+		</div>
+		<table>
+			<tr>
+				<th>
+					<button type="submit" onclick="myFunction()">Đăng kí</button>
+				</th>
+				<th>
+					<button type="submit" onclick="xemds()">Xem danh sách</button>
+				</th>
+				<th>
+					<button type="submit" onclick="myFunction()">Submit</button>
+				</th>
+			</tr>
+		</table>
+
+		
 	</div>
+	<script>
+		function myFunction(){
+			var tableRef = document.getElementById("customers");
+			var newRow = tableRef.insertRow();
+
+			var maSoCell = newRow.insertCell(0);
+			var a = document.createTextNode(document.getElementById("ms").value);
+			maSoCell.appendChild(a);
+
+			var hotenCell = newRow.insertCell(1);
+			var b = document.createTextNode(document.getElementById("ht").value);
+			hotenCell.appendChild(b);
+
+			var giotinhCell = newRow.insertCell(2);
+			var c = document.createTextNode(document.getElementById("ranam").checked?"nam":"nữ");			
+			giotinhCell.appendChild(c);
+
+			var ngaySinhCell = newRow.insertCell(3);
+			var d = document.createTextNode(document.getElementById("ngay").value +
+				'/' +
+				document.getElementById("thang").value +
+				'/' +
+				document.getElementById("nam").value
+				);
+			ngaySinhCell.appendChild(d);
+
+			addRowHandlers();
+
+			dictionary[document.getElementById("ms").value] = dsmon;
+			dsmon = [];
+		}
+
+		// function xemds(){
+		// 	var t = document.getElementById("customers");
+		// 	var parser = new DOMParser();
+		// 	var doc    = parser.parseFromString(t.outerHTML, "text/html");
+		// 	var obj    = [].map.call(doc.querySelectorAll('tr'), tr => {
+		// 		return [].slice.call(tr.querySelectorAll('td')).reduce( (a,b,i) => {
+		// 			return a['prop' + (i+1)] = b.textContent, a;
+		// 		}, {});
+		// 	});
+		// 	var h = document.getElementById("MonHocDaChon");
+		// 	var s = '';
+		// 	for (var i = 1; i<obj.length; i++){
+		// 		s= s + obj[i]["prop1"] + ':' + obj[i]["prop2"] + ' ' + obj[i]["prop3"] + obj[i]["prop4"];
+		// 		for (var j = 0; j<h.length;j++){
+		// 			s += h[j].value + ' ';
+		// 		}
+		// 	}
+		// 	alert(s);
+		// }
+
+		function addRowHandlers() {
+			var table = document.getElementById("customers");
+			var rows = table.getElementsByTagName("tr");
+			for (i = 0; i < rows.length; i++) {
+				var currentRow = table.rows[i];
+				var createClickHandler = 
+				function(row) 
+				{
+					return function() { 
+						//var h = document.getElementById("MonHocDaChon");
+						var cell = row.getElementsByTagName("td");
+						var id = cell[0].innerHTML + '\n'+ "Ho ten: " + 
+						cell[1].innerHTML + '\n' + "Gioi tinh: " + 
+						cell[2].innerHTML + '\n' + "Ngay thang nam sinh: " + 
+						cell[3].innerHTML + '\n' + "Mon hoc da dang ki: " + '\n';
+
+						for (var j = 0; j<dictionary[cell[0].innerHTML].length;j++){
+							
+							id += dictionary[cell[0].innerHTML][j] + '\n';
+							console.log(dictionary[cell[0].innerHTML]);
+						}
+						alert("Ma so: " + id);
+					};
+				};
+
+				currentRow.onclick = createClickHandler(currentRow);
+			}
+		}
+
+		window.onload = addRowHandlers();
+		var dsmon = [];
+		dictionary = {};
+
+		function chonMon_click(){
+			var s = document.getElementById("CacMonHoc");
+			var k = document.getElementById("MonHocDaChon");
+			themVaoSelect(k, s.options[s.selectedIndex].value);
+			dsmon.push(s.options[s.selectedIndex].value);
+			s.remove(s.selectedIndex);
+		}
+
+		function chonTatCaMon_click(){
+			var i, item;
+			var s = document.getElementById("CacMonHoc");
+			var k = document.getElementById("MonHocDaChon");
+
+			console.log(s.options.length);
+			for(i = 0; i < s.options.length; i++) {
+				//console.log(i);
+				item = s[i];
+				themVaoSelect(k,item.value);
+				dsmon.push(item.value);
+			}
+
+			for(i =s.options.length - 1; i >= 0; i--) {
+				s.remove(s[i].value);
+			}
+		}
+
+		function xoaMon_click(){
+			var k = document.getElementById("CacMonHoc");
+			var s = document.getElementById("MonHocDaChon");
+			themVaoSelect(k, s.options[s.selectedIndex].value);
+			
+			//dsmon.remove(s.options[s.selectedIndex].value);
+			console.log(s.options[s.selectedIndex]);
+			delete dsmon[dsmon.indexOf(s.options[s.selectedIndex].value)];
+			dsmon = dsmon.filter(function (el) {
+				return el != null;
+			});
+			s.remove(s.selectedIndex);	
+		}
+
+		function xoaTatCaMon_click(){
+			var i, item;
+			var k = document.getElementById("CacMonHoc");
+			var s = document.getElementById("MonHocDaChon");
+
+			console.log(s.options.length);
+			for(i = 0; i < s.options.length; i++) {
+				console.log(i);
+				item = s[i];
+				themVaoSelect(k,item.value);
+			}
+
+			for(i =s.options.length - 1; i >= 0; i--) {
+				s.remove(s[i].value);
+			}
+			dsmon=[];
+		}
+
+		function themVaoSelect(s, value){
+			var opt = document.createElement('option');
+			opt.appendChild( document.createTextNode(value) );
+			opt.value = value; 
+			s.appendChild(opt); 
+		}
+	</script>
 </body>
 </html>
 
