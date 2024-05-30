@@ -6,5 +6,3 @@ related_posts: false
 ---
 
 Two papers accepted to Journal: Computers & Graphics.
-- SketchANIMAR: sketch-based 3D animal fine-grained retrieval
-- TextANIMAR: text-based 3D animal fine-grained retrieval
