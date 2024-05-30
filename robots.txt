@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://viettham1998.github.io/viettham1998.github.io/sitemap.xml
+Sitemap: https://viettham1998.github.io/sitemap.xml
