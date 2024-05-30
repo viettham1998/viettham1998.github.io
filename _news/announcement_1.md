@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two papers (poster presentation) accepted to ISMAR 2022 conference.
+Two papers (poster presentation) accepted to **<a>ISMAR 2022</a>** conference.

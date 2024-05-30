@@ -17,6 +17,7 @@ profile:
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+latest_posts: false
 ---
 
 Hey! It's Viet-Tham and I'm a Researcher located in Ho Chi Minh City. I conduct research on Virtual Reality combined with Artificial Intelligence with the desire to come up with many interesting products that support users in many different ways.
