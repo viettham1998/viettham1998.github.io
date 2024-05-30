@@ -46,5 +46,3 @@ In this article, we introduce our system that can help learners to better learn 
 <!-- <div class="caption">
     You can also have artistically styled 2/3 + 1/3 images, like these.
 </div> -->
-
-{% endraw %}
