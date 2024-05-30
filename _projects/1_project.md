@@ -9,7 +9,7 @@ related_publications: true
 ---
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0" style="text-align: center;">
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/L61uvmxIwgo?controls=0" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -17,9 +17,9 @@ related_publications: true
     </div>
 </div>
 
-Nowadays, with a computer connected to the internet, we can learn almost anything in the world. Combined with classroom learning, Massive Open Online Courses (MOOCs) give people the opportunity to enroll and learn from top experts around the world. To increase the interactivity of these platforms, the integration of Virtual Reality (VR - Virtual Reality) technology can bring great benefits to learners. In detail, this technology has quite a large development potential as smartphones are becoming more and more popular nowadays. VR gives us the ability to create environments where we can interactively experience virtual objects. By understanding the internal structure of an object, we can perform scientific experiments without the need for actual experimental equipment.
+<p style="text-align: justify;">Nowadays, with a computer connected to the internet, we can learn almost anything in the world. Combined with classroom learning, Massive Open Online Courses (MOOCs) give people the opportunity to enroll and learn from top experts around the world. To increase the interactivity of these platforms, the integration of Virtual Reality (VR - Virtual Reality) technology can bring great benefits to learners. In detail, this technology has quite a large development potential as smartphones are becoming more and more popular nowadays. VR gives us the ability to create environments where we can interactively experience virtual objects. By understanding the internal structure of an object, we can perform scientific experiments without the need for actual experimental equipment.</p>
 
-In this article, we introduce our system that can help learners to better learn about the Human Body, Solar System and many other lessons that can be built upon the system. Our system was built during the COVID epidemic, with the desire to learn and interact in a virtual environment to help teachers and students better understand the lesson. Through the process of experimenting and surveying, they received positive feedback from teachers and students, specifically: 98.4% of students felt that they were effectively absorbing knowledge, easy to understand, easy to imagine; 96.8% of students feel like interacting with the activities of the lesson.
+<p style="text-align: justify;">In this article, we introduce our system that can help learners to better learn about the Human Body, Solar System and many other lessons that can be built upon the system. Our system was built during the COVID epidemic, with the desire to learn and interact in a virtual environment to help teachers and students better understand the lesson. Through the process of experimenting and surveying, they received positive feedback from teachers and students, specifically: 98.4% of students felt that they were effectively absorbing knowledge, easy to understand, easy to imagine; 96.8% of students feel like interacting with the activities of the lesson.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
