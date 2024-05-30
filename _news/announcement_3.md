@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two papers accepted to SoICT 2023 conference.
+Two papers accepted to  **<a href="https://soict.org/">SoICT 2023</a>** conference.

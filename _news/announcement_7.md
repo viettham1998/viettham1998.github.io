@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I successfully defended my master's thesis: **<a>"Visual understanding to assist 3D scene generation with user interaction"</a>**
+I successfully defended my master's thesis: **<a href="#">"Visual understanding to assist 3D scene generation with user interaction"</a>**

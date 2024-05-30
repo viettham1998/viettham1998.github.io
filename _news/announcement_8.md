@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I started my internship at NII
+I started my internship at **<a href="https://www.nii.ac.jp/en/">NII</a>**
