@@ -2,11 +2,20 @@
 layout: page
 title: Student Scientific Research Prize Euréka
 description: Natural Interactive System and Virtual Reality Supporting STEM Education.
-img: assets/eureka/traogiai.jpeg
+img: assets/img/eureka/traogiai.jpeg
 importance: 1
 category: work
 related_publications: true
 ---
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/L61uvmxIwgo?controls=0" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+    </div>
+</div>
 
 Nowadays, with a computer connected to the internet, we can learn almost anything in the world. Combined with classroom learning, Massive Open Online Courses (MOOCs) give people the opportunity to enroll and learn from top experts around the world. To increase the interactivity of these platforms, the integration of Virtual Reality (VR - Virtual Reality) technology can bring great benefits to learners. In detail, this technology has quite a large development potential as smartphones are becoming more and more popular nowadays. VR gives us the ability to create environments where we can interactively experience virtual objects. By understanding the internal structure of an object, we can perform scientific experiments without the need for actual experimental equipment.
 
@@ -14,13 +23,13 @@ In this article, we introduce our system that can help learners to better learn 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/eureka/bk1.jpeg" title="" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/eureka/bk1.jpeg" title="" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/eureka/bk2.jpeg" title="" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/eureka/bk2.jpeg" title="" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/eureka/traogiai1.jpeg" title="" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/eureka/traogiai1.jpeg" title="" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <!-- <div class="caption">
@@ -28,7 +37,7 @@ In this article, we introduce our system that can help learners to better learn 
 </div> -->
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/eureka/traogiai1.jpeg" title="" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/eureka/traogiai1.jpeg" title="" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <!-- <div class="caption">
@@ -37,10 +46,10 @@ In this article, we introduce our system that can help learners to better learn 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/eureka/traogiai.jpeg" title="" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/eureka/traogiai.jpeg" title="" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/eureka/poster.jpeg" title="" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/eureka/poster.jpeg" title="" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <!-- <div class="caption">
