@@ -3,7 +3,7 @@ layout: about
 title: Home
 permalink: /
 subtitle: <p><a href='https://en.hcmus.edu.vn/'>Researcher at University of Science - VNUHCM, VietNam</a></p>
-          <p><a href='https://nii.ac.jp/en/'>Student Internship at National Institute of Informatics (NII), Japan</a></p>
+          <p><a href='https://www.nii.ac.jp/en/'>Student Internship at National Institute of Informatics (NII), Japan</a></p>
 
 profile:
   align: right
