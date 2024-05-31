@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Student Scientific Research Prize Euréka
-description: Natural Interactive System and Virtual Reality Supporting STEM Education.
-img: assets/img/eureka/traogiai.jpeg
+title: Natural Interactive System and Virtual Reality Supporting STEM Education
+description: Student Scientific Research Prize Euréka
+img: assets/img/eureka/bk1.jpeg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 <div class="row">
