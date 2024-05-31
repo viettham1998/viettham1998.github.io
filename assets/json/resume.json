@@ -1,36 +1,63 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Viet-Tham Huynh",
+    "label": "Reseacher",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "hvtham@selab.hcmus.edu.vn",
+    "phone": "(+84) 353 062 111",
+    "url": "https://viettham1998.github.io/",
+    "summary": "",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "227 Nguyen Van Cu St",
+      "postalCode": "70000",
+      "city": "Ho Chi Minh City",
+      "countryCode": "VN",
+      "region": "Viet Nam"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "Viet-Tham Huynh",
+        "url": ""
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "National Institute of Informatics [Japan] 国立情報学研究所",
+      "position": "Research Intern",
+      "url": "https://www.nii.ac.jp/en/",
+      "startDate": "2024-03-13",
+      "endDate": "",
+      "summary": "",
+      "highlights": ["Computer Vision", "Image Captioning"]
+    },
+    {
+      "name": "VNUHCM - University of Science",
+      "position": "Researcher",
+      "url": "https://hcmus.edu.vn/",
+      "startDate": "2021-07-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": ["Virtual Reality", "Computer Vision"]
+    },
+    {
+      "name": "City Science Lab @ Ho Chi Minh City",
+      "position": "Software Developer",
+      "url": "",
+      "startDate": "2021-05-01",
+      "endDate": "2024-03-31",
+      "summary": "",
+      "highlights": ["CityScope", "District 4", "Tan Thuan District"]
+    },
+    {
+      "name": "Drone Orange",
+      "position": "Software Developer",
+      "url": "",
+      "startDate": "2020-10-01",
+      "endDate": "2021-01-31",
+      "summary": "",
+      "highlights": ["Virtual Reality", " Augmented Reality"]
     }
   ],
   "volunteer": [
