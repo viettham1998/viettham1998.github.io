@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Viet-Tham Huynh
     - name: Date of Birth
-      value: 14th March 1879
+      value: 26th March 1998
     - name: Languages
-      value: English, German
+      value: Vietnamese, English
 
 - title: Education
   type: time_table
