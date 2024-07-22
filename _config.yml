@@ -48,7 +48,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 930px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -90,7 +90,7 @@ publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
 scholar_userid: mrF9kUEAAAAJ # your Google Scholar ID
-scopus_id: # your profile on Scopus
+scopus_id: 58059146300 # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
 stackoverflow_id: # your stackoverflow id
