@@ -1,4 +1,28 @@
 {
+  "educations": [
+    {
+      "institution": "University of Science - VNUHCM, VietNam",
+      "location": "Ho Chi Minh City",
+      "url": "https://hcmus.edu.vn/",
+      "area": "Computer Science",
+      "studyType": "MSc",
+      "startDate": "2021-12-01",
+      "endDate": "2023-12-31",
+      "score": "",
+      "courses": ["Thesis: Visual understanding to assist 3D scene generation with user interaction", "Score: 10/10"]
+    },
+    {
+      "institution": "University of Science - VNUHCM, VietNam",
+      "location": "Ho Chi Minh City",
+      "url": "https://hcmus.edu.vn/",
+      "area": "Software Engineer",
+      "studyType": "BSc",
+      "startDate": "2016-09-01",
+      "endDate": "2021-04-01",
+      "score": "",
+      "courses": ["Thesis: Mixed Reality Application for Education Based on Cloud Computing", "Score: 10/10"]
+    }
+  ],
   "works": [
     {
       "name": "National Institute of Informatics [Japan] 国立情報学研究所",
@@ -35,30 +59,6 @@
       "endDate": "2021-01-31",
       "summary": "",
       "highlights": ["Virtual Reality", " Augmented Reality"]
-    }
-  ],
-  "educations": [
-    {
-      "institution": "University of Science - VNUHCM, VietNam",
-      "location": "Ho Chi Minh City",
-      "url": "https://hcmus.edu.vn/",
-      "area": "Software Engineer",
-      "studyType": "BSc",
-      "startDate": "2016-09-01",
-      "endDate": "2021-04-01",
-      "score": "",
-      "courses": ["Thesis: Mixed Reality Application for Education Based on Cloud Computing", "Score: 10/10"]
-    },
-    {
-      "institution": "University of Science - VNUHCM, VietNam",
-      "location": "Ho Chi Minh City",
-      "url": "https://hcmus.edu.vn/",
-      "area": "Computer Science",
-      "studyType": "MSc",
-      "startDate": "2021-12-01",
-      "endDate": "2023-12-31",
-      "score": "",
-      "courses": ["Thesis: Visual understanding to assist 3D scene generation with user interaction", "Score: 10/10"]
     }
   ],
   "award": [
