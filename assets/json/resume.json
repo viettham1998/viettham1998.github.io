@@ -1,27 +1,4 @@
 {
-  "basics": {
-    "name": "Viet-Tham Huynh",
-    "label": "Reseacher",
-    "image": "",
-    "email": "hvtham@selab.hcmus.edu.vn",
-    "phone": "(+84) 353 062 111",
-    "url": "https://hvtham.com/",
-    "summary": "",
-    "location": {
-      "address": "227 Nguyen Van Cu St",
-      "postalCode": "70000",
-      "city": "Ho Chi Minh City",
-      "countryCode": "VN",
-      "region": "Viet Nam"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "Viet-Tham Huynh",
-        "url": ""
-      }
-    ]
-  },
   "works": [
     {
       "name": "National Institute of Informatics [Japan] 国立情報学研究所",
