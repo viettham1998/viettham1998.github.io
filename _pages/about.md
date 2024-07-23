@@ -10,9 +10,8 @@ profile:
   image: my_avt.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>227 Nguyen Van Cu</p>
-    <p>Ward 4, District 5</p>
-    <p>Ho Chi Minh City</p>
+    <p>227 Nguyen Van Cu, Ward 4,</p>
+    <p>District 5, Ho Chi Minh City</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
