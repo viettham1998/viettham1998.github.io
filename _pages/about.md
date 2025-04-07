@@ -6,7 +6,7 @@ subtitle: <p><a href='https://en.hcmus.edu.vn/'>Researcher at University of Scie
 
 profile:
   align: right
-  image: my_avt.jpg
+  image: my_avt_1.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>227 Nguyen Van Cu, Ward 4,</p>
